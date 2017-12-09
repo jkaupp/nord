@@ -1,0 +1,12 @@
+Package: nord
+Title: The ArticIceStudios nord colour palettes and similar inspired palettes.
+Version: 0.0.1
+Authors@R: person("Jake", "Kaupp", email = "jkaupp@gmail.com", role = c("aut", "cre"))
+Description: Provides the ArcticIceStudios nord colour palettes.
+Depends: R (>= 3.3.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Author: Jake Kaupp
+Maintainer: Jake Kaupp <jkaupp@gmail.com>
+RoxygenNote: 6.0.1
