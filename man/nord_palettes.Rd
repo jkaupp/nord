@@ -18,8 +18,9 @@ polarnight
 snowstorm
 frost
 aurora
-}
-\examples{
 
+There are also two additional palettes derived from two northern classics:
+lumina - a colour palette inspired by the Lumina Borealis event https://www.luminaborealis.com/
+mountain - a colour palette inspired by the painting 'Mountain Forms' by Lawren Harris
 }
 \keyword{datasets}

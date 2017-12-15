@@ -10,3 +10,4 @@ LazyData: true
 Author: Jake Kaupp
 Maintainer: Jake Kaupp <jkaupp@gmail.com>
 RoxygenNote: 6.0.1
+Imports: ggplot2
