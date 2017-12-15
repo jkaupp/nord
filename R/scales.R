@@ -6,7 +6,7 @@
 #'
 #' @param reverse If TRUE, the direction of the colours is reversed.
 #'
-#' @importFrom("grDevices", "colorRampPalette")
+#' @importFrom grDevices colorRampPalette
 #'
 #' @export
 nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
