@@ -8,8 +8,11 @@
 #' snowstorm
 #' frost
 #' aurora
-#'@examples
 #'
+#' There are also two additional palettes derived from two northern classics:
+#' lumina - a colour palette inspired by the Lumina Borealis event https://www.luminaborealis.com/
+#' mountain - a colour palette inspired by the painting 'Mountain Forms' by Lawren Harris
+#'@examples
 
 nord_palettes <- list(polarnight = c("#2E3440", "#3B4252", "#434C5E", "#4C566A"),
                       snowstorm = c("#D8DEE9", "#E5E9F0", "#ECEFF4"),
