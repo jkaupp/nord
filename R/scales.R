@@ -1,3 +1,37 @@
+#' nord palette colors ramped to a specified length
+#'
+#' @param n Number of colors to display
+#'
+#' @param palette Choose from 'nord_palettes' list
+#'
+#' @param alpha transparency
+#'
+#' @param reverse If TRUE, the direction of the colours is reversed.
+#'
+#' @importFrom grDevices colorRampPalette
+#'
+#' @export
+nord <- function(palette = "polarnight", n, alpha = 1, reverse = FALSE) {
+
+  pal <- nord_palettes[[palette]]
+
+  if (is.null(pal))
+    stop("Palette not found.")
+
+  if(missing(n)) {
+    n <- length(pal)
+  }
+
+  if (reverse) {
+    pal <- rev(pal)
+  }
+
+  pal <- colorRampPalette(pal, alpha)(n)
+
+  return(pal)
+
+}
+
 #' nord palette with ramped colours
 #'
 #' @param palette Choose from 'nord_palettes' list
@@ -11,13 +45,12 @@
 #' @export
 nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 
-  pal <- nord_palettes[[palette]]
+ function(n) {
+   nord(palette, n, alpha, reverse)
+ }
 
-  if (reverse) {
-    pal <- rev(pal)
-  }
-  return(colorRampPalette(pal, alpha))
 }
+
 
 #' nord color scale for ggplot2
 #'
@@ -46,13 +79,14 @@ scale_color_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1,
     discrete_scale("colour", "nord", nord_pal(palette, alpha = alpha, reverse = reverse))
   }
   else {
-    scale_color_gradientn(colours = nord_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+    scale_color_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
   }
 }
 
 #' @rdname scale_color_nord
 #' @export
 scale_colour_nord <- scale_color_nord
+
 
 #' #' nord fill scale for ggplot2
 #'
@@ -69,10 +103,13 @@ scale_colour_nord <- scale_color_nord
 #'
 #' @export
 scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = TRUE, ...) {
-  if (discrete) {
-    discrete_scale("fill", "nord", palette = nord_pal(palette, alpha = alpha, reverse = reverse))
+
+   if (discrete) {
+    discrete_scale("fill", "nord", nord_pal(palette, alpha = alpha, reverse = reverse))
   }
   else {
-    scale_fill_gradientn(colours = nord_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+    scale_fill_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
   }
 }
+
+
