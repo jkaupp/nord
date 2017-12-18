@@ -5,8 +5,8 @@
 
 A package containing several palettes:
 
- 1. 4 nord colour palettes from [ArticIceStudio](https://git.io/nord) 
- 2. 9 Colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists))
+ 1. 4  colour palettes from [ArticIceStudio's Nord Palettes](https://git.io/nord) 
+ 2. 11 colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists))
  3. 1 color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
  
 | | | |
