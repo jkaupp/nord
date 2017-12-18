@@ -3,13 +3,13 @@
 \docType{data}
 \name{nord_palettes}
 \alias{nord_palettes}
-\title{Nord color palettes for R from ArcticIceStudios https://git.io/nord}
-\format{An object of class \code{list} of length 6.}
+\title{Nord and northern-themed color palettes}
+\format{An object of class \code{list} of length 16.}
 \usage{
 nord_palettes
 }
 \description{
-An arctic, north-bluish color palette.
+Nord: An arctic, north-bluish color palette.
 Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax highlighting and UI. It consists of four palettes utilzing a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful ambiance.
 }
 \details{
@@ -19,8 +19,6 @@ snowstorm
 frost
 aurora
 
-There are also two additional palettes derived from two northern classics:
-lumina - a colour palette inspired by the Lumina Borealis event https://www.luminaborealis.com/
-mountain - a colour palette inspired by the painting 'Mountain Forms' by Lawren Harris
+There are also 11 Colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists)) and one color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
 }
 \keyword{datasets}
