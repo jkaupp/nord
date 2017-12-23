@@ -9,7 +9,6 @@
 #' frost
 #' aurora
 #'
-#'
 #' There are also 11 Colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists)) and one color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
 
 nord_palettes <- list(#Nord Palette
@@ -24,7 +23,7 @@ nord_palettes <- list(#Nord Palette
                       silver_mine = c("#4B644B","#647D4B","#E1E1E1","#7D96AF","#647D96"),
                       lake_superior = c("#7D4B19","#C89664","#C87d4B","#4B647D","#324B64","#19324B"),
                       victory_bonds = c("#AF1900","#C83200","#E19600","#193264","#001964"),
-                      halifax_harbor = c("#E1C8AF","#C8AF96","#AF967D","#967D7D","#7D6464","#644B64","#4B324b"),
+                      halifax_harbor = c("#E1C8AF","#C8AF96","#AF967D","#967D7D","#644B64","#4B324b"),
                       moose_pond = c("#4B3232","#7D4B32","#966432","#AF7D32","#E19632","#E1AF4B","#C8C896","#4B4B4B"),
                       algoma_forest = c("#4B4B4B","#967D4B", "#AFAF7D", "#C89632", "#647D64","#96AFAF","#7D96AF"),
                       rocky_mountain = c("#BEBEBE", "#C8C8C8", "#DCD2C8","#D2C8C8", "#BEBEC8", "#B4B4BE"),
