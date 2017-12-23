@@ -10,7 +10,7 @@
 #' aurora
 #'
 #' There are also 11 Colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists)) and one color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
-
+#' @export
 nord_palettes <- list(#Nord Palette
                       polarnight = c("#2E3440", "#3B4252", "#434C5E", "#4C566A"),
                       snowstorm = c("#D8DEE9", "#E5E9F0", "#ECEFF4"),
