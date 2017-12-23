@@ -1,17 +1,119 @@
 
-# nord  
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+nord: Northern-themed Color palettes
+====================================
 
 [![Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)
 
-A package containing several palettes:
+The goal of nord is to provide access to many northern inspired palettes:
 
- 1. 4  colour palettes from [ArticIceStudio's Nord Palettes](https://git.io/nord) 
- 2. 11 colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists))
- 3. 1 color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
- 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  blah |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
+1.  4 colour palettes from [ArticIceStudio's Nord Palettes](https://git.io/nord)
+2.  1 color palette extracted from [Lumina Borealis](https://www.luminaborealis.com/)
+3.  11 colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists))
 
+These palettes can be used both with `ggplot2`, `lattice` and base R plotting to provide color to charts and graphics. The palettes in `nord` try to split equally between qualitiative, sequential and diverging data, similar to the categories used in [ColorBrewer](http://colorbrewer2.org/). Further information and use of each palette can be found in the vignette.
+
+Installation
+------------
+
+You can install nord from github with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("jkaupp/nord")
+```
+
+The Palettes of `nord`
+----------------------
+
+``` r
+library(nord)
+
+par(mfrow=c(8, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+
+lapply(names(nord_palettes), nord_show_palette)
+```
+
+<img src="man/figures/README-palettes-1.png" width="100%" />
+
+    #> [[1]]
+    #> NULL
+    #> 
+    #> [[2]]
+    #> NULL
+    #> 
+    #> [[3]]
+    #> NULL
+    #> 
+    #> [[4]]
+    #> NULL
+    #> 
+    #> [[5]]
+    #> NULL
+    #> 
+    #> [[6]]
+    #> NULL
+    #> 
+    #> [[7]]
+    #> NULL
+    #> 
+    #> [[8]]
+    #> NULL
+    #> 
+    #> [[9]]
+    #> NULL
+    #> 
+    #> [[10]]
+    #> NULL
+    #> 
+    #> [[11]]
+    #> NULL
+    #> 
+    #> [[12]]
+    #> NULL
+    #> 
+    #> [[13]]
+    #> NULL
+    #> 
+    #> [[14]]
+    #> NULL
+    #> 
+    #> [[15]]
+    #> NULL
+    #> 
+    #> [[16]]
+    #> NULL
+
+Example
+-------
+
+This is a basic example which shows you how to use the different features in `nord`:
+
+Here is how to use `scale_fill_nord()` with `ggplot2`
+
+``` r
+library(ggplot2)
+library(nord)
+
+ggplot(diamonds) + 
+  geom_bar(aes(x = cut, fill = clarity)) +
+  scale_fill_nord("victory_bonds")
+```
+
+<img src="man/figures/README-ggplot2_example-1.png" width="100%" />
+
+Here is using the `nord` function, with built in color-ramping, with the obligatory base r volcano.
+
+``` r
+image(volcano, col = nord("aurora", 20))
+```
+
+<img src="man/figures/README-plot_example-1.png" width="100%" />
+
+You can view the individual palettes in `nord` via `nord_show_palette()`
+
+``` r
+nord_show_palette("baie_mouton")
+```
+
+<img src="man/figures/README-show_palette-1.png" width="100%" />
