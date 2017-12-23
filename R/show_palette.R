@@ -16,10 +16,10 @@ nord_show_palette <- function(palette) {
 
    if (length(palette > 0)) {
 
-    image(1:n, 1, as.matrix(1:n), col = palette,
+    graphics::image(1:n, 1, as.matrix(1:n), col = palette,
           xlab = "", ylab = "", xaxt = "n", yaxt = "n",
           bty = "n")
-    title(main = name)
+    graphics::title(main = name)
 
   }
 }

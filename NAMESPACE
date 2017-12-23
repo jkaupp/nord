@@ -2,6 +2,8 @@
 
 export(nord)
 export(nord_pal)
+export(nord_palettes)
+export(nord_show_palette)
 export(scale_color_nord)
 export(scale_colour_nord)
 export(scale_fill_nord)

@@ -36,8 +36,9 @@ devtools::install_github("jkaupp/nord")
 ## The Palettes of `nord`
 
 ```{r palettes}
+library(nord)
 
-par(mfrow=c(length(nord_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(8, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 
 lapply(names(nord_palettes), nord_show_palette)
 
