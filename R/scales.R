@@ -10,6 +10,9 @@
 #'
 #' @importFrom grDevices colorRampPalette
 #'
+#' @examples
+#' library(nord)
+#' image(volcano, col = nord("aurora", 20))
 #' @export
 nord <- function(palette = "polarnight", n, alpha = 1, reverse = FALSE) {
 
@@ -41,8 +44,6 @@ nord <- function(palette = "polarnight", n, alpha = 1, reverse = FALSE) {
 #' @param reverse If TRUE, the direction of the colours is reversed.
 #'
 #' @importFrom grDevices colorRampPalette
-#'
-#' @export
 nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 
  function(n) {
@@ -69,6 +70,14 @@ nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 #' @inheritParams viridis::scale_color_viridis
 #'
 #' @importFrom ggplot2 scale_colour_manual
+#'
+#' @examples
+#' library(ggplot2)
+#' library(nord)
+#'
+#' ggplot(diamonds) +
+#'  geom_point(aes(x = carat, y = price, color = cut)) +
+#'  scale_color_nord("lumina")
 #'
 #' @export
 #'
@@ -101,6 +110,13 @@ scale_colour_nord <- scale_color_nord
 #'
 #' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'
+#' @examples
+#' library(ggplot2)
+#' library(nord)
+#'
+#' ggplot(diamonds) +
+#'   geom_bar(aes(x = cut, fill = clarity)) +
+#'   scale_fill_nord("victory_bonds")
 #' @export
 scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = TRUE, ...) {
 

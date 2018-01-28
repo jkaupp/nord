@@ -18,3 +18,7 @@ nord(palette = "polarnight", n, alpha = 1, reverse = FALSE)
 \description{
 nord palette colors ramped to a specified length
 }
+\examples{
+library(nord)
+image(volcano, col = nord("aurora", 20))
+}

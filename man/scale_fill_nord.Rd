@@ -21,3 +21,11 @@ scale_fill_nord(palette = "polarnight", discrete = TRUE, alpha = 1,
 \description{
 #' nord fill scale for ggplot2
 }
+\examples{
+library(ggplot2)
+library(nord)
+
+ggplot(diamonds) +
+  geom_bar(aes(x = cut, fill = clarity)) +
+  scale_fill_nord("victory_bonds")
+}

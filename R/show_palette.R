@@ -5,6 +5,7 @@
 #' @param palette vector of character hex RGB values
 #' @export
 #' @examples
+#' library(nord)
 #' nord_show_palette("halifax_harbor")
 nord_show_palette <- function(palette) {
 

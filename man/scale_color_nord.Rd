@@ -25,3 +25,12 @@ scale_colour_nord(palette = "polarnight", discrete = TRUE, alpha = 1,
 \description{
 nord color scale for ggplot2
 }
+\examples{
+library(ggplot2)
+library(nord)
+
+ggplot(diamonds) +
+ geom_point(aes(x = carat, y = price, color = cut)) +
+ scale_color_nord("lumina")
+
+}

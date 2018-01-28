@@ -13,5 +13,6 @@ nord_show_palette(palette)
 Given a character vector (hex RGB values), display palette in graphics window.
 }
 \examples{
+library(nord)
 nord_show_palette("halifax_harbor")
 }
