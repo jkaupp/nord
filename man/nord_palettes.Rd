@@ -10,7 +10,7 @@ nord_palettes
 }
 \description{
 Nord: An arctic, north-bluish color palette.
-Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax highlighting and UI. It consists of four palettes utilzing a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful ambiance.
+Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax highlighting and UI. It consists of four palettes utilizing a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful ambiance.
 }
 \details{
 The available palettes are:
