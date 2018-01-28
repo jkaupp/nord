@@ -4,3 +4,5 @@
 ^testing\.R$
 ^LICENSE\.md$
 ^README\.Rmd$
+^cran_comments\.md$
+^appveyor\.yml$

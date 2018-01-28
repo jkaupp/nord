@@ -14,7 +14,8 @@ knitr::opts_chunk$set(
 ```
 # nord: Northern-themed Color palettes
 
-[![Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)
+[![Travis Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jkaupp/nord?branch=master&svg=true)](https://ci.appveyor.com/project/jkaupp/nord)
 
 The goal of nord is to provide access to many northern inspired palettes:
 
