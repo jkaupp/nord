@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 testing.R
-README.rmd
+README.Rmd
 cran_comments.md
 LICENSE.md
 NEWS.md
