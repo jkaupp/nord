@@ -1,5 +1,5 @@
 Package: nord
-Title: ‘The ArticIceStudios Nord and Group of Seven Inspired Colour Palettes’
+Title: ‘The ArcticIceStudios Nord and Group of Seven Inspired Colour Palettes’
 Version: 0.0.1
 Authors@R: person("Jake", "Kaupp", email = "jkaupp@gmail.com", role = c("aut", "cre"))
 Description: Provides the ArcticIceStudios nord, group of seven and northern inspired colour palettes.
