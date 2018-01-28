@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-nord: Northern-themed Color palettes
+nord: Northern-themed Colour palettes
 ====================================
 
 [![Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)
@@ -8,10 +8,10 @@ nord: Northern-themed Color palettes
 The goal of nord is to provide access to many northern inspired palettes:
 
 1.  4 colour palettes from [ArticIceStudio's Nord Palettes](https://git.io/nord)
-2.  1 color palette extracted from [Lumina Borealis](https://www.luminaborealis.com/)
+2.  1 colour palette extracted from [Lumina Borealis](https://www.luminaborealis.com/)
 3.  11 colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists)).
 
-These palettes can be used both with `ggplot2`, `lattice` and base R plotting to provide color to charts and graphics. The palettes in `nord` try to split equally between qualitative, sequential and diverging data, similar to the categories used in [ColorBrewer](http://colorbrewer2.org/). Further information and use of each palette can be found in the vignette.
+These palettes can be used both with `ggplot2`, `lattice` and base R plotting to provide colour to charts and graphics. The palettes in `nord` try to split equally between qualitative, sequential and diverging data, similar to the categories used in [ColorBrewer](http://colorbrewer2.org/). Further information and use of each palette can be found in the vignette.
 
 Installation
 ------------
@@ -55,7 +55,7 @@ ggplot(diamonds) +
 
 <img src="man/figures/README-ggplot2_example-1.png" width="100%" />
 
-Here is using the `nord` function, with built in color-ramping, with the obligatory base r volcano.
+Here is using the `nord` function, with built in colour-ramping, with the obligatory base r volcano.
 
 ``` r
 image(volcano, col = nord("aurora", 20))
@@ -74,15 +74,15 @@ nord_show_palette("baie_mouton")
 Acknowledgements
 ----------------
 
-I started building this package long ago, as part of my own personal utility packages, as I have been using the nord palettes from ArcticIce Studioes for quite some time. A few months ago, I read something on the interwebs stating that work you did that was still private was pretty much a waste, so share it openly. That struck a chord. Then I read Maelle Salmon's ["How to Develop Good R Packages (for open science)"](http://www.masalmon.eu/2017/12/11/goodrpackages/), and was introduced to `usethis`, `styler` and `goodpractice`. That was the catalyst for making this package.
+I started building this package long ago, as part of my own personal utility packages, as I have been using the nord palettes from ArcticIce Studios for quite some time. A few months ago, I read something on the interwebs stating that work you did that was still private was pretty much a waste, so share it openly. That struck a chord. Then I read Maelle Salmon's ["How to Develop Good R Packages (for open science)"](http://www.masalmon.eu/2017/12/11/goodrpackages/), and was introduced to `usethis`, `styler` and `goodpractice`. That was the catalyst for making this package.
 
-I drew inspiration from many color palette packages out there (`viridis`, `ochRe`, `swatches`, `wesanderson`, `RColorBrewer`), and used a lot of the functions to modernize, streamline and finally create `nord`.
+I drew inspiration from many colour palette packages out there (`viridis`, `ochRe`, `swatches`, `wesanderson`, `RColorBrewer`), and used a lot of the functions to modernize, streamline and finally create `nord`.
 
 Referenced Work from the Group of Seven
 ---------------------------------------
 
 -   Forest, Algoma by Arthur Lismer
--   Entrance to Halifax Harbor by AY Jackson
+-   Entrance to Halifax Harbour by AY Jackson
 -   Baie des Moutons by Edwin Holgate
 -   Moose Pond by Frank H Johnston
 -   A Northern Silver Mine by Franklin Carmichael
@@ -91,4 +91,4 @@ Referenced Work from the Group of Seven
 -   Mountain Forms by Lawren S. Harris
 -   Afternoon Sun Lake Superior by Lawren S. Harris
 -   Goat Range Rocky Mountain by JEH MacDonald
--   Sunny Afternoon Prarie by Lionel LeMoine Fitzgerald
+-   Sunny Afternoon Prairie by Lionel LeMoine Fitzgerald
