@@ -3,7 +3,7 @@ Title: Arctic Ice Studio's Nord and Group of Seven Inspired Colour Palettes
 Version: 0.0.1
 Authors@R: person("Jake", "Kaupp", email = "jkaupp@gmail.com")
 Description: Provides the Arctic Ice Studio's nord and group of seven and northern inspired colour palettes.
-Depends: R (>= 3.4.3)
+Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
