@@ -16,7 +16,13 @@ These palettes can be used both with `ggplot2`, `lattice` and base R plotting to
 Installation
 ------------
 
-You can install nord from github with:
+You can install nord from CRAN:
+
+``` r
+install.packages("nord")
+```
+
+or you can install the development version of nord from github with:
 
 ``` r
 # install.packages("devtools")
