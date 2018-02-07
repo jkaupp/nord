@@ -4,14 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
+
 # nord: Northern-themed Color palettes
 
 [![Travis Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jkaupp/nord?branch=master&svg=true)](https://ci.appveyor.com/project/jkaupp/nord)[![CRAN status](http://www.r-pkg.org/badges/version/nord)](https://cran.r-project.org/package=nord)[![Depsy](http://depsy.org/api/package/cran/nord/badge.svg)](http://depsy.org/package/r/nord)[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
@@ -29,35 +22,40 @@ These palettes can be used both with `ggplot2`, `lattice` and base R plotting to
 
 You can install nord from CRAN:
 
-```{r cran-install, eval = FALSE}
+
+```r
 install.packages("nord")
 ```
 
 or you can install the development version of nord from github with:
 
-```{r gh-installation, eval = FALSE}
+
+```r
 # install.packages("devtools")
 devtools::install_github("jkaupp/nord")
 ```
 
 ## The Palettes of `nord`
 
-```{r palettes}
+
+```r
 library(nord)
 library(purrr)
 
 par(mfrow=c(8, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 
 walk(names(nord_palettes), nord_show_palette)
-
 ```
+
+<img src="man/figures/README-palettes-1.png" width="100%" />
 
 ## Example
 
 This is a basic example which shows you how to use the different features in `nord`:
 
 Here is how to use `scale_fill_nord()` with `ggplot2` 
-```{r ggplot2_example}
+
+```r
 library(ggplot2)
 library(nord)
 
@@ -66,17 +64,25 @@ ggplot(diamonds) +
   scale_fill_nord("victory_bonds")
 ```
 
+<img src="man/figures/README-ggplot2_example-1.png" width="100%" />
+
 Here is using the `nord` function, with built in color-ramping, with the obligatory base r volcano.
 
-```{r plot_example}
+
+```r
 image(volcano, col = nord("aurora", 20))
 ```
 
+<img src="man/figures/README-plot_example-1.png" width="100%" />
+
 You can view the individual palettes in `nord` via `nord_show_palette()`
 
-```{r show_palette}
+
+```r
 nord_show_palette("baie_mouton")
 ```
+
+<img src="man/figures/README-show_palette-1.png" width="100%" />
 
 ## Acknowledgements
 
