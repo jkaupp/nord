@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # nord: Northern-themed Color palettes
 
-[![Travis Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jkaupp/nord?branch=master&svg=true)](https://ci.appveyor.com/project/jkaupp/nord)[![CRAN status](http://www.r-pkg.org/badges/version/nord)](https://cran.r-project.org/package=nord)[![Depsy](http://depsy.org/api/package/cran/nord/badge.svg)](http://depsy.org/package/r/nord)[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Travis Build Status](https://travis-ci.org/jkaupp/nord.svg?branch=master)](https://travis-ci.org/jkaupp/nord)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jkaupp/nord?branch=master&svg=true)](https://ci.appveyor.com/project/jkaupp/nord)[![CRAN status](http://www.r-pkg.org/badges/version/nord)](https://cran.r-project.org/package=nord)[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/nord)](https://CRAN.R-project.org/package=nord)
 
 The goal of nord is to provide access to many northern inspired palettes:
 
