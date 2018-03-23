@@ -85,7 +85,7 @@ nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 scale_color_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
 
   if (discrete) {
-    discrete_scale("colour", "nord", nord_pal(palette, alpha = alpha, reverse = reverse))
+    discrete_scale("colour", "nord", nord_pal(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
     scale_color_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
@@ -121,7 +121,7 @@ scale_colour_nord <- scale_color_nord
 scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = TRUE, ...) {
 
    if (discrete) {
-    discrete_scale("fill", "nord", nord_pal(palette, alpha = alpha, reverse = reverse))
+    discrete_scale("fill", "nord", nord_pal(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
     scale_fill_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
