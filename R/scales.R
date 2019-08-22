@@ -118,7 +118,7 @@ scale_colour_nord <- scale_color_nord
 #'   geom_bar(aes(x = cut, fill = clarity)) +
 #'   scale_fill_nord("victory_bonds")
 #' @export
-scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = TRUE, ...) {
+scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
 
    if (discrete) {
     discrete_scale("fill", "nord", nord_pal(palette, alpha = alpha, reverse = reverse), ...)

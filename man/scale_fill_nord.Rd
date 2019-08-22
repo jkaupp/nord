@@ -5,7 +5,7 @@
 \title{#' nord fill scale for ggplot2}
 \usage{
 scale_fill_nord(palette = "polarnight", discrete = TRUE, alpha = 1,
-  reverse = TRUE, ...)
+  reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Choose from 'nord_palettes' list}

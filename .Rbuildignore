@@ -6,3 +6,4 @@
 ^README\.Rmd$
 ^cran_comments\.md$
 ^appveyor\.yml$
+^cran-comments\.md$
