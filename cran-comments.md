@@ -11,3 +11,5 @@ There were 2 notes:
 
 There were no ERRORs or WARNINGs. 
 
+## Note for Resubmission
+1. Placed single quotes around 'ggplot2' in title and desription

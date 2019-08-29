@@ -7,3 +7,4 @@
 ^cran_comments\.md$
 ^appveyor\.yml$
 ^cran-comments\.md$
+^CRAN-RELEASE$
